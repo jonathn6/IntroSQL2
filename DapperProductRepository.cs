@@ -34,6 +34,8 @@ namespace IntroSQL
             var sqlDeleteString = "";
             try
             {
+                //This command should build a sql DELETE which should delete a record from the sales table where the ProductID
+                //equals the Product ID entered by the user
                 sqlDeleteString = "DELETE sales WHERE ProductID = " + productID;
                 sqlReturn = _connection.Execute(sqlDeleteString);
                 sqlDeleteString = "DELETE FROM reviews WHERE ProductID = " + productID;
